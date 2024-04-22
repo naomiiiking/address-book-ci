@@ -1,8 +1,13 @@
-import com.example.addressbook.model.*;
+import com.example.addressbook.model.Contact;
+import com.example.addressbook.model.ContactManager;
+import com.example.addressbook.model.MockContactDAO;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ContactManagerTest {
     private ContactManager contactManager;
